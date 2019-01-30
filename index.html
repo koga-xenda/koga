@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale = 1.0">
+<title>回転しながら画面に現れる | 絵はバラバラ</title>
+
+<!--** SSI-sumai2015_header **-->
+<!--#include virtual="/ssiinc/ssi_sumai2015_header.html" -->
+<!--***************************** ↓外部CSS JSの読み込みはこちらに記入 **********************************-->
+
+
+
+<!-- 練習用CSS -->
+<link rel="stylesheet" href="css/kgstyle.css">
+
+<!-- /練習用CSS -->
+<!-- 練習用js -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	$(function() {
+		$("#loading").fadeOut();
+		$("#sectionContents").fadeIn();
+	});
+
+</script>
+<!-- /練習用js -->
+
+<!--***************************** ↑外部CSS JSの読み込みはこちらに記入 **********************************-->
+</head>
+
+<body>
+
+
+
+<div id="page">
+
+<div class="mod_breadcrumb">
+<div class="mod_breadcrumb_inner">
+<ul>
+<li>テスト</li>
+</ul>
+<p class="logo">
+<img alt="Panasonic Homes＆Living" src="/img/brand_logo_2015.gif">
+</p>
+<!-- / .mod_breadcrumb_inner --></div>
+<!-- / .mod_breadcrumb --></div>
+<!--/[BREADCRUMB BLOCK]-->
+  
+<!--[HEADERBAR BLOCK]-->
+<header class="mod_headerbar">
+
+<!-- / .mod_headerbar --></header>
+<!-- /[HEADERBAR BLOCK]-->
+  
+<!--***************************** ここからコンテンツ編集エリア **********************************-->
+<!-- ローディング  -->
+<div id="loading"><img src="img/img-loading.gif" alt="Loading..." /></div>
+<!-- /ローディング -->
+
+<div id="sectionContents">
+
+<!-- アニメーションjs -->
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	//.MovieContents内スクロール初期化
+	$('.MovieContents').scrollTop(0,0);
+	//.MovieContentsをスクロールでfunction実行
+	$('.MovieContents').scroll(function(){
+		//#MovieContentsからのスクロール距離
+		var MH = -950 * Math.floor(($(this).scrollTop() / 50));
+		if( MH >= -105450){
+		$('.MVimg').css({"margin-top": MH});
+		}else if( MH <= -105451 && MH >= -106400){
+		$('.MVimg').css({"margin-top": "-105450px"});
+		}
+	});
+});
+
+$(document).ready(function(){
+	//.MovieContentsをスクロールでfunction実行
+	$('.MovieContents').scroll(function(){
+		//#MovieContentsからのスクロール距離
+		var MH = -950 * Math.floor(($(this).scrollTop() / 50));
+		if( MH >= -50000){
+		$('.logoHandLotion').css({"display": "none"});
+		}else if( MH <= -5000 && MH >= -106400){
+		$('.logoHandLotion').css({"display": "table"});
+		$('.logoHandLotion').css({"animation": "fadeIn 2s ease 0s 1 normal"});
+		}
+	});
+});
+
+</script>
+<!-- /アニメーションjs -->
+
+<!-- アニメーション部分 -->
+<div class="MovieWrap">
+<div class="scrollIcon">
+<span></span>Scroll
+</div>
+<div class="logoHandLotion">
+<p>HAND<br>LOTION</p>
+</div>
+<!--<div id="Mosc"></div>-->
+<div class="MovieContents">
+<div class="Mobj"></div>
+</div>
+<div class="MVout">
+<div class="MVimg" style="margin-top: -0px;">
+<p><img src="img/pic01_01.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_02.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_03.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_04.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_05.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_06.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_07.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_08.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_09.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_10.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_11.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_12.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_13.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_14.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_15.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_16.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_17.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_18.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_19.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_20.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_21.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_22.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_23.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_24.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_25.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_26.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_27.png" alt="ボトルアップ"></p>
+<p><img src="img/pic01_28.png" alt="ボトルアップ"></p>
+<p><img src="img/pic02_01.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_02.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_03.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_04.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_05.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_06.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_07.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_08.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_09.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_10.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_11.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_12.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_13.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_14.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_15.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_16.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_17.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_18.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_19.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_20.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_21.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_22.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_23.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_24.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_25.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_26.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_27.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_28.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_01.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_02.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_03.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_04.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_05.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_06.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_07.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_08.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_09.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_10.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_11.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_12.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_13.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_14.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_15.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_16.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_17.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_18.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_19.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_20.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_21.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_22.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_23.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_24.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_25.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_26.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_27.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_28.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_01.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_02.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_03.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_04.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_05.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_06.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_07.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_08.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_09.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_10.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_11.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_12.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_13.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_14.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_15.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_16.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_17.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_18.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_19.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_20.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_21.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_22.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_23.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_24.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_25.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_26.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_27.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_28.png" alt="ボトル回転"></p>
+<p><img src="img/pic02_28.png" alt="ボトル回転"></p>
+</div>
+</div>
+</div>
+<!-- /アニメーション部分 -->
+
+
+<!--***************************** ここからメインコンテンツ編集エリア **********************************-->
+<!-- /sectionContents --></div>
+<!--end #sectionContents-->
+
+
+  
+<!-- end #page --></div>
+
+
+
+
+</body>
+</html>
