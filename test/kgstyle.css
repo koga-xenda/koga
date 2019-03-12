@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/****************************************************************
+/* KOGA PRACTICE purposes only *
+/*****************************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    70% {opacity: 0.7}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    70% {opacity: 0.7}
+}
+
+/* loader */
+
+#sectionContents{
+	display:none;
+	}
+#loading{
+	position:absolute;
+	width: 1200px;
+	height: 515px;
+	left:50%;
+	margin-left: -600px;
+	padding-top: 435px;
+	text-align: center;
+	display: table-cell;
+	background: #000 repeat left top;
+}
+
+
+/* animation */
+.MovieWrap{
+	position: relative; 
+	left:50%; 
+	margin-left:-600px; 
+	top:25%;
+	}
+.Mosc{
+	background-color:#e2b949; 
+	width:20px; 
+	height:950px; 
+	position: absolute; 
+	top:0px; 
+	right:0px; 
+	z-index:1100;
+	}
+.MVout{
+	position: relative;
+	top:0px;
+	height:950px;
+	width:1240px;
+	overflow:hidden; 
+	background-image:url(../img/mv_bg.png);
+	}
+.MVimg{
+	position: absolute;
+	top:0px;
+	left:0px;
+	}
+.MVimg p{
+	line-height:0;
+	width: 1200px;
+	height: 950px;
+	}
+.MVimg p img{
+	width: 1200px;
+	height: 950px;
+}
+.MovieWrap{
+	position: relative;
+	overflow:hidden;
+	width:1240px;
+	}
+.MovieContents{
+	overflow-x:hidden;
+	width:1240px;
+	height:950px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:100;
+	background:none repeat scroll 0 0 transparent;}
+.Mobj{
+	width:1240px;
+	height:6800px;
+	}
+
+/* scroll icon */
+.scrollIcon {
+	padding-top: 80px;
+	position: absolute;
+	bottom: 80%;
+	left: 90%;
+	z-index: 4;
+	display: inline-block;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+}
+.scrollIcon span {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 30px;
+	height: 50px;
+	margin-left: -15px;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	box-sizing: border-box;
+}
+.scrollIcon span::before {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	content: '';
+	width: 6px;
+	height: 6px;
+	margin-left: -3px;
+	background-color: #fff;
+	border-radius: 100%;
+	box-sizing: border-box;
+}
+.scrollIcon span::after {
+	position: absolute;
+	bottom: -18px;
+	left: 50%;
+	width: 18px;
+	height: 18px;
+	content: '';
+	margin-left: -9px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	box-sizing: border-box;
+}
+
+/* logoHandLotion */
+.logoHandLotion{
+	margin: 112px;
+	width: 270px;
+	height: 270px;
+	background: #fff repeat left top;
+	position: absolute;
+	opacity: 0.7;
+	z-index: 5;
+	text-align: center;
+	display: none;
+}
+.logoHandLotion p{
+	font-size: 38px;
+	line-height: 1.6;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: bold;
+	color: #007581;
+	vertical-align: middle;
+	display: table-cell;
+}
